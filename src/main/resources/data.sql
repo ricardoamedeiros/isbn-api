@@ -1,0 +1,2 @@
+insert into Provedor  (id, nome, ativo, local, ordem, classe) values (1, 'ISBN Brasil', 1, '/home/biblioteca-nacional-connector-2.0.0.jar', 1,'br.com.salute.BibliotecaNacionalConnector');
+insert into Provedor  (id, nome, ativo, local, ordem, classe) values (2, 'Provedor Genérico', 1, '/home/generico-provedor-1.0.0.jar', 2,'br.com.salute.Generico');

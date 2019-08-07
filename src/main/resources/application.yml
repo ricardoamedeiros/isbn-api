@@ -1,0 +1,29 @@
+server:
+  contextPath: /
+  use-forward-headers: true
+  port: 8083
+  
+spring:
+  application:
+    name: @project.artifactId@
+  datasource:
+    continue-on-error: true
+    driver-class-name: org.h2.Driver
+    platform: h2
+    url: jdbc:h2:~/test;DB_CLOSE_ON_EXIT=FALSE;DATABASE_TO_UPPER=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS test
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        web-allow-others: true  
+
+app:
+  seguranca:
+    enable-https: false
+  swagger:
+    nome-projeto: @project.artifactId@
+    pacote-projeto: @project.groupId@
+  origin-permitida: '*'
